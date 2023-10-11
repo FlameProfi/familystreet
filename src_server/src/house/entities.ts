@@ -14,6 +14,7 @@ export type Entity = {
 	dimension: number;
 	paid: number;
 	owner?: string;
+	family?: string;
 	blip?: BlipMp;
 };
 
@@ -83,6 +84,7 @@ class HouseEntities {
 			paid: 1,
 			locked: false,
 			owner: null,
+			family: null,
 			inventory: []
 		};
 
