@@ -18,6 +18,8 @@ import './jobs';
 import './games';
 import './trading';
 import './factions';
+import './family'
+import './gangCreator'
 
 const interiorId = mp.game.interior.getInteriorAtCoords(311.2546, -592.4204, 42.32737);
 
