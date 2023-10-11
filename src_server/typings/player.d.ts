@@ -2,16 +2,20 @@ interface PlayerMp {
 	colshape?: number;
 	colshapes: number[];
 	attachments: number[];
+
 }
 
 interface Player {
 	readonly mp: PlayerMp;
+	family?: {
+		name: string;
+		rank: string;
+	};
 	performing: boolean;
 	cache: { [name: string]: any };
 	dbId: string;
 	adminLvl: number;
 	dead: boolean;
-
 	account?: string;
 	waypoint?: Vector3Mp;
 	target?: PlayerMp | VehicleMp;

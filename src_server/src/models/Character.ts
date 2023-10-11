@@ -17,6 +17,7 @@ type Character = {
 	inventory: InventoryItem[];
 	vehicleSlots: number;
 	experience: number;
+	family: string;
 	appearance?: { [name: string]: any };
 	licenses: { [name: string]: string };
 	tasks: { [name: string]: number };

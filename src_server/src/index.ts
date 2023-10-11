@@ -30,6 +30,7 @@ import './factions/police';
 import './factions/mafia';
 import './factions/gangs';
 import './donation';
+import gangs from './family';
 
 class App {
 	private async connectToDatabase() {
@@ -58,6 +59,7 @@ class App {
 			time.run();
 			antiCheat.init();
 
+			await gangs.loadPlayer(player);
 			await authToken.clearExpired();
 			await loadServices();
 			await loadJobs();
