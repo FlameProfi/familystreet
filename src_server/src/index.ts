@@ -1,4 +1,6 @@
 /* eslint-disable import/first */
+import player from "./player";
+
 require('dotenv').config();
 
 import 'source-map-support/register';
@@ -31,6 +33,7 @@ import './factions/mafia';
 import './factions/gangs';
 import './donation';
 import gangs from './family';
+import './gangCreator'
 
 class App {
 	private async connectToDatabase() {

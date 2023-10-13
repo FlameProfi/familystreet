@@ -28,6 +28,10 @@ const houseSchema = new Schema({
 		type: Boolean,
 		default: false
 	},
+	family: {
+		type: Schema.Types.ObjectId,
+		ref: 'Family'
+	},
 	paid: {
 		type: Number,
 		default: 1
